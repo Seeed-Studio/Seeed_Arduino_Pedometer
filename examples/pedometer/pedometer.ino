@@ -23,8 +23,10 @@ void oledInit(){
     //oled init
     Wire.begin();
     SeeedOled.init();  //initialze SEEED OLED display
+    #if defined(ARDUINO_ARCH_AVR)
     DDRB|=0x21;        //digital pin 8, LED glow indicates Film properly Connected .
     PORTB |= 0x21;
+    #endif
     
     SeeedOled.clearDisplay();          //clear the screen and set start position to top left corner
     SeeedOled.setNormalDisplay();      //Set display to normal mode (i.e non-inverse mode)
