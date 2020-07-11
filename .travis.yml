@@ -14,7 +14,7 @@ script:
    - cat $PWD/seeed-arduino-ci.sh
    - bash $PWD/seeed-arduino-ci.sh
      nothing
-     Seeed-Studio/Seeed_Accelerometer_ADXL345_g.git Seeed-Studio/Grove_Current_Sensor.git
+     Seeed-Studio/Seeed_Arduino_ADXL345.git Seeed-Studio/Grove_Current_Sensor.git
 
 notifications:
   email:
