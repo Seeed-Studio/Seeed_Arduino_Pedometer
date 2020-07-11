@@ -31,7 +31,7 @@
 
 
 #include <ADXL345.h>
-#include "arduino.h"
+#include "Arduino.h"
 
 #define MAX_AXIS                3
 #define MAX_WINDOW              3
